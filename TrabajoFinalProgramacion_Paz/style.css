@@ -9,3 +9,36 @@ body{
     background-position: 50%;
     background-attachment: fixed;
 }
+
+nav{
+    background-color: rgba(95, 120, 160, 0.39);
+}
+
+nav ul{
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    color : white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul a:hover{
+    color: rgb(45, 171, 180);
+}
+
+nav ul a li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
