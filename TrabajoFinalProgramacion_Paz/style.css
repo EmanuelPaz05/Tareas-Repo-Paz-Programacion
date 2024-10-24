@@ -10,9 +10,20 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.cont {
+.contInicio {
     display: flex;
     justify-content: end;
+    padding: 10px;
+    align-items: center;
+    height: 80%;
+    text-transform: uppercase;
+    color: white;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.cont {
+    display: flex;
+    justify-content: center;
     padding: 10px;
     align-items: center;
     height: 80%;
