@@ -1,24 +1,75 @@
-
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     height: 95vh;
-    background-image: url(./img/fondo1.jpg);
+    background-image: url(./img/fondoInicio.jpg);
     background-size: cover;
-    background-position: 50%;
+    background-position: 0px -100px;
     background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav{
+.cont {
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+    align-items: center;
+    height: 80%;
+    text-transform: uppercase;
+    color: white;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cont .video {
+    text-align: center;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    margin: 10px;
+    transition: transform 0.5s, box-shadow 0.5s; /* Solo aplicar transición a las propiedades que cambian */
+    transform: scale(1); /* Estado normal */
+}
+
+.cont .video:hover {
+    transform: scale(1.1); /* Escalar al 110% en hover */
+}
+
+.cont .video iframe {
+    width: 100%; /* Ajustar el iframe para que ocupe todo el contenedor */
+    height: 100%; /* Ajustar la altura también */
+    border-radius: 10px; /* Para que el iframe tenga bordes redondeados */
+}
+
+.cont .video iframe:hover {
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.42);
+}
+
+p {
+    margin-bottom: 2px;
+}
+
+.cont h1 {
+    text-shadow: 2px 2px rgb(0, 0, 0);
+    text-align: end;
+    font-size: 27px;
+    margin-right: 10px;
+}
+
+.messiTitulo{
+    color: #D4AF37;
+}
+
+nav {
     background-color: rgba(95, 120, 160, 0.39);
 }
 
-nav ul{
+nav ul {
     list-style: none;
     padding: 10px;
     margin: 0;
-    color : white;
+    color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -27,16 +78,23 @@ nav ul{
     gap: 10px;
 }
 
-nav ul a{
+nav ul:hover {
+    transition: all 0.5s;
+    box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+nav ul a {
     text-decoration: none;
     color: white;
 }
 
-nav ul a:hover{
+nav ul a:hover {
     color: rgb(45, 171, 180);
+    transition: color 0.5s, text-shadow 0.5s; /* Aplicar transición de color y sombra de texto */
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
-nav ul a li{
+nav ul a li {
     display: flex;
     justify-content: center;
     align-items: center;
